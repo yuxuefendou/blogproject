@@ -1,5 +1,6 @@
 from django.db import models
-
+import markdown
+from django.utils.html import strip_tags
 # Create your models here.
 
 from  django.contrib.auth.models import User
@@ -53,5 +54,17 @@ class Post(models.Model):
     def get_absolute_url(self):
         print(reverse('blog:detail', kwargs={'pk': self.pk}))
         return reverse('blog:detail', kwargs={'pk': self.pk})
+
+    def save(self, *args, **kwargs):
+        if not self.excerpt:
+            md = markdown.Markdown(
+                extensions=[
+                'markdown.extensions.extra',
+                'markdown.extensions.codehilite',
+                ]
+            )
+            self.excerpt = strip_tags(md.convert(self.body))[:54]
+
+        super(Post, self).save(*args, **kwargs)
 
 
