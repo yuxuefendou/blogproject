@@ -33,6 +33,8 @@ class Post(models.Model):
     #文章作者，这里从User 是从Django.contrib.auth.models 导入
 
     author = models.ForeignKey(User)
+    class Meta:
+        ordering = ['-created_time']
 
     def __str__(self):
         return self.title
