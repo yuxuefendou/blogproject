@@ -33,7 +33,7 @@ class Post(models.Model):
     # 文章摘要
     excerpt = models.CharField(max_length=200, blank=True)
     # 文章分类标签
-    category = models.ForeignKey(Category)
+    category = models.ForeignKey('Category')
     tags = models.ManyToManyField(Tag, blank=True)
 
     # 文章作者，这里从User 是从Django.contrib.auth.models 导入
