@@ -15,7 +15,6 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/
 
@@ -26,7 +25,6 @@ SECRET_KEY = '3^03$83kek=)a^c3vyks-n^5$g2p$2r%b4rk2v!z^1w%tcz+8j'
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
-
 
 # Application definition
 
@@ -39,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'blog',
     'comments',
+    'ckeditor',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -72,17 +72,23 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'blogproject.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # }
+'default': {
+        'ENGINE': 'django.db.backends.mysql',  # 或者使用 mysql.connector.django
+        'NAME': 'yxfdblog',
+        'USER': 'root',
+        'PASSWORD': '123456',
+        'HOST':'localhost',
+        'PORT':'3306',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/1.11/ref/settings/#auth-password-validators
@@ -102,14 +108,13 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
 
-#LANGUAGE_CODE = 'en-us'
+# LANGUAGE_CODE = 'en-us'
 LANGUAGE_CODE = 'zh-hans'
 
-#TIME_ZONE = 'UTC'
+# TIME_ZONE = 'UTC'
 TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
@@ -118,12 +123,98 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.11/howto/static-files/
 
 STATIC_URL = '/static/'
 
+# CKEDITOR_JQUERY_URL = 'https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'
+
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, "static")
+    os.path.join(BASE_DIR, 'static'),
 ]
+
+# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+# Media files
+MEDIA_URL = '/uploader/'  # 你的media url 在Url显示并没什么关系
+MEDIA_ROOT = '/media/' # 你media 的绝对地址。从根目录到你的media目录:/root/.../media/
+
+#注意！ media 目录与 CKEDITOR_UPLOAD_PATH 是相对的所以：
+# Ckeditor settings
+CKEDITOR_UPLOAD_PATH = "uploads/"  # 他的目录相对与media root 就是 media root + CKEDITOR_UPLOAD_PATH 不能写成"/uploads/"
+CKEDITOR_JQUERY_URL = 'js/jquery.min.js'
+CKEDITOR_IMAGE_BACKEND = 'pillow'  # 图像库支持需要安装 PIL
+
+# 这个设置看你的偏好。。。仅仅是一个exsample
+CKEDITOR_CONFIGS = {
+    'default': {
+        'update': ['Image', 'Update', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak'],
+        'skin': 'moono',
+        # 'skin': 'office2013',
+        'toolbar_Basic': [
+            ['Source', '-', 'Bold', 'Italic']
+        ],
+        'toolbar_YourCustomToolbarConfig': [
+            {'name': 'document', 'items': ['Source', '-', 'Save', 'NewPage', 'Preview', 'Print', '-', 'Templates']},
+            {'name': 'clipboard', 'items': ['Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo']},
+            {'name': 'editing', 'items': ['Find', 'Replace', '-', 'SelectAll']},
+            {'name': 'forms',
+             'items': ['Form', 'Checkbox', 'Radio', 'TextField', 'Textarea', 'Select', 'Button', 'ImageButton',
+                       'HiddenField']},
+            '/',
+            {'name': 'basicstyles',
+             'items': ['Bold', 'Italic', 'Underline', 'Strike', 'Subscript', 'Superscript', '-', 'RemoveFormat']},
+            {'name': 'paragraph',
+             'items': ['NumberedList', 'BulletedList', '-', 'Outdent', 'Indent', '-', 'Blockquote', 'CreateDiv', '-',
+                       'JustifyLeft', 'JustifyCenter', 'JustifyRight', 'JustifyBlock', '-', 'BidiLtr', 'BidiRtl',
+                       'Language']},
+            {'name': 'links', 'items': ['Link', 'Unlink', 'Anchor']},
+            {'name': 'insert',
+             'items': ['Image', 'Flash', 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak', 'Iframe']},
+            '/',
+            {'name': 'styles', 'items': ['Styles', 'Format', 'Font', 'FontSize']},
+            {'name': 'colors', 'items': ['TextColor', 'BGColor']},
+            {'name': 'tools', 'items': ['Maximize', 'ShowBlocks']},
+            {'name': 'about', 'items': ['About']},
+            '/',  # put this to force next toolbar on new line
+            {'name': 'yourcustomtools', 'items': [
+                # put the name of your editor.ui.addButton here
+                'Preview',
+                'Maximize',
+
+            ]},
+        ],
+        'toolbar': 'YourCustomToolbarConfig',  # put selected toolbar config here
+        # 'toolbarGroups': [{ 'name': 'document', 'groups': [ 'mode', 'document', 'doctools' ] }],
+        # 'height': 291,
+         'width': '100%',
+        # 'filebrowserWindowHeight': 725,
+        # 'filebrowserWindowWidth': 940,
+        # 'toolbarCanCollapse': True,
+        # 'mathJaxLib': '//cdn.mathjax.org/mathjax/2.2-latest/MathJax.js?config=TeX-AMS_HTML',
+        'tabSpaces': 4,
+        'extraPlugins': ','.join(
+            [
+                # your extra plugins here
+                'div',
+                'autolink',
+                'autoembed',
+                'embedsemantic',
+                'autogrow',
+                # 'devtools',
+                'widget',
+                'lineutils',
+                'clipboard',
+                'dialog',
+                'dialogui',
+                'elementspath'
+            ]),
+    }
+}
+
+
+
+
+

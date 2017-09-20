@@ -1,9 +1,0 @@
-INSERT INTO django_content_type (app_label, model) VALUES ('admin', 'logentry');
-INSERT INTO django_content_type (app_label, model) VALUES ('auth', 'user');
-INSERT INTO django_content_type (app_label, model) VALUES ('auth', 'permission');
-INSERT INTO django_content_type (app_label, model) VALUES ('auth', 'group');
-INSERT INTO django_content_type (app_label, model) VALUES ('contenttypes', 'contenttype');
-INSERT INTO django_content_type (app_label, model) VALUES ('sessions', 'session');
-INSERT INTO django_content_type (app_label, model) VALUES ('blog', 'category');
-INSERT INTO django_content_type (app_label, model) VALUES ('blog', 'tag');
-INSERT INTO django_content_type (app_label, model) VALUES ('blog', 'post');

@@ -1,7 +1,0 @@
-INSERT INTO django_admin_log (object_id, object_repr, action_flag, change_message, content_type_id, user_id, action_time) VALUES ('2', 'Django test', 1, '[{"added": {}}]', 7, 2, '2017-09-14 00:34:32.256093');
-INSERT INTO django_admin_log (object_id, object_repr, action_flag, change_message, content_type_id, user_id, action_time) VALUES ('2', '这是我的第一篇文章', 1, '[{"added": {}}]', 9, 2, '2017-09-14 00:34:48.551672');
-INSERT INTO django_admin_log (object_id, object_repr, action_flag, change_message, content_type_id, user_id, action_time) VALUES ('3', 'markdown 测试', 1, '[{"added": {}}]', 9, 2, '2017-09-14 09:01:26.273954');
-INSERT INTO django_admin_log (object_id, object_repr, action_flag, change_message, content_type_id, user_id, action_time) VALUES ('3', 'markdown 测试', 2, '[{"changed": {"fields": ["body", "excerpt"]}}]', 9, 2, '2017-09-14 10:41:21.173155');
-INSERT INTO django_admin_log (object_id, object_repr, action_flag, change_message, content_type_id, user_id, action_time) VALUES ('3', '归档测试', 1, '[{"added": {}}]', 7, 2, '2017-09-14 12:38:21.977917');
-INSERT INTO django_admin_log (object_id, object_repr, action_flag, change_message, content_type_id, user_id, action_time) VALUES ('2', '归档', 1, '[{"added": {}}]', 8, 2, '2017-09-14 12:38:32.542316');
-INSERT INTO django_admin_log (object_id, object_repr, action_flag, change_message, content_type_id, user_id, action_time) VALUES ('4', 'Django test3', 1, '[{"added": {}}]', 9, 2, '2017-09-14 12:38:47.245230');

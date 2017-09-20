@@ -1,11 +1,17 @@
 from django.db import models
 import markdown
 from django.utils.html import strip_tags
+from ckeditor.fields import RichTextField
+from ckeditor_uploader.fields import RichTextUploadingField
 # Create your models here.
 
 from  django.contrib.auth.models import User
 from django.urls import reverse
 from django.utils.six import python_2_unicode_compatible
+
+@python_2_unicode_compatible
+class Post2(models.Model):
+    body = RichTextUploadingField(verbose_name='正文')
 
 
 @python_2_unicode_compatible
@@ -27,7 +33,7 @@ class Tag(models.Model):
 @python_2_unicode_compatible
 class Post(models.Model):
     title = models.CharField(max_length=70)
-    body = models.TextField()
+    body = RichTextUploadingField()
     created_time = models.DateTimeField()
     modified_time = models.DateTimeField()
     # 文章摘要
@@ -52,7 +58,6 @@ class Post(models.Model):
         return self.title
 
     def get_absolute_url(self):
-        print(reverse('blog:detail', kwargs={'pk': self.pk}))
         return reverse('blog:detail', kwargs={'pk': self.pk})
 
     def save(self, *args, **kwargs):

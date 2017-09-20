@@ -1,9 +1,0 @@
-INSERT INTO sqlite_sequence (name, seq) VALUES ('django_migrations', 14);
-INSERT INTO sqlite_sequence (name, seq) VALUES ('django_admin_log', 7);
-INSERT INTO sqlite_sequence (name, seq) VALUES ('django_content_type', 9);
-INSERT INTO sqlite_sequence (name, seq) VALUES ('auth_permission', 27);
-INSERT INTO sqlite_sequence (name, seq) VALUES ('auth_user', 2);
-INSERT INTO sqlite_sequence (name, seq) VALUES ('blog_category', 3);
-INSERT INTO sqlite_sequence (name, seq) VALUES ('blog_tag', 2);
-INSERT INTO sqlite_sequence (name, seq) VALUES ('blog_post', 4);
-INSERT INTO sqlite_sequence (name, seq) VALUES ('blog_post_tags', 3);

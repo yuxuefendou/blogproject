@@ -12,13 +12,13 @@ from .models import Post
 
 class AllPostsRssFeed(Feed):
     # 显示在聚合阅读器上的标题
-    title = "Django 博客教程演示项目"
+    title = "浴血奋斗博客"
 
     # 通过聚合阅读器跳转到网站的地址
-    link = "/"
+    link = "http://xukang.yuxuefendou.cn:8080/"
 
     # 显示在聚合阅读器上的描述信息
-    description = "Django 博客教程演示项目测试文章"
+    description = "浴血奋斗博客文章"
 
     # 需要显示的内容条目
     def items(self):
