@@ -22,6 +22,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '3^03$83kek=)a^c3vyks-n^5$g2p$2r%b4rk2v!z^1w%tcz+8j'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+# DEBUG = False
 DEBUG = True
 
 ALLOWED_HOSTS = ['*']
@@ -39,7 +40,15 @@ INSTALLED_APPS = [
     'comments',
     'ckeditor',
     'ckeditor_uploader',
+    'wechat_sdk',
+    'weixin',
+    # 'wechat_sdk.context.framework.django',
+    # auth_user_user_permissions
+    # 'django.contrib.sites',
+    # 'users'
 ]
+
+# AUTH_USER_MODEL = 'users.User'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -76,18 +85,18 @@ WSGI_APPLICATION = 'blogproject.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # }
-'default': {
-        'ENGINE': 'django.db.backends.mysql',  # 或者使用 mysql.connector.django
-        'NAME': 'yxfdblog',
-        'USER': 'root',
-        'PASSWORD': '123456',
-        'HOST':'localhost',
-        'PORT':'3306',
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.mysql',  # 或者使用 mysql.connector.django
+    #     'NAME': 'yxfdblog',
+    #     'USER': 'root',
+    #     'PASSWORD': '123456',
+    #     'HOST': 'localhost',
+    #     'PORT': '3306',
+    # }
 }
 
 # Password validation
@@ -128,20 +137,22 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 # CKEDITOR_JQUERY_URL = 'https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static'),
 ]
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+#STATIC_ROOT = (os.path.join(BASE_DIR, 'static').replace('\\','/'))
 
 
 # Media files
-MEDIA_URL = '/uploader/'  # 你的media url 在Url显示并没什么关系
-MEDIA_ROOT = '/media/' # 你media 的绝对地址。从根目录到你的media目录:/root/.../media/
+MEDIA_URL = '/static/media/'  # 你的media url 在Url显示并没什么关系
+#MEDIA_URL = '/uploader/'  # 你的media url 在Url显示并没什么关系
+MEDIA_ROOT = 'static/media/'  # 你media 的绝对地址。从根目录到你的media目录:/root/.../media/
 
-#注意！ media 目录与 CKEDITOR_UPLOAD_PATH 是相对的所以：
+# 注意！ media 目录与 CKEDITOR_UPLOAD_PATH 是相对的所以：
 # Ckeditor settings
 CKEDITOR_UPLOAD_PATH = "uploads/"  # 他的目录相对与media root 就是 media root + CKEDITOR_UPLOAD_PATH 不能写成"/uploads/"
 CKEDITOR_JQUERY_URL = 'js/jquery.min.js'
@@ -189,7 +200,7 @@ CKEDITOR_CONFIGS = {
         'toolbar': 'YourCustomToolbarConfig',  # put selected toolbar config here
         # 'toolbarGroups': [{ 'name': 'document', 'groups': [ 'mode', 'document', 'doctools' ] }],
         # 'height': 291,
-         'width': '100%',
+        'width': '100%',
         # 'filebrowserWindowHeight': 725,
         # 'filebrowserWindowWidth': 940,
         # 'toolbarCanCollapse': True,
@@ -214,7 +225,34 @@ CKEDITOR_CONFIGS = {
     }
 }
 
+# 设置缓存
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.filebased.FileBasedCache',
+        # 'LOCATION': 'e:/foo/bar',
+        'LOCATION': '/var/tmp/django_cache',
+        'TIMEOUT': 600,
+        'OPTIONS': {
+            'MAX_ENTRIES': 1000
+        }
+    }
+}
 
-
-
+# 输出sql语句
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'loggers': {
+        'django.db.backends': {
+            'handlers': ['console'],
+            # 'level': 'DEBUG' if DEBUG else 'INFO',
+            'level': 'DEBUG',
+        },
+    },
+}
 
