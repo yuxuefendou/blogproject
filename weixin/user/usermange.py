@@ -54,7 +54,7 @@ def UpdateUserInfo(openid):
     if obj:
         obj.update(subscribe=1)
     else:
-        info = wechat_instance.get_user_info(openid)
+        info = wechat_instance.get_user_info(openid,lang='zh_CN')
         UserInfo.objects.create(user=obj,headimgurl=info['headimgurl'],
                           subscribe_time=info['subscribe_time'],
                           sex=info['sex'],language=info['language'],
@@ -67,6 +67,8 @@ def DelUser(openid):
     user = User.objects.filter(openid=openid)
     UserInfo.objects.filter(user=user).update(subscribe=0)
 
+
+
 def UpdateUser():
     """
     更新系统中用户系统，如果如何不存在则添加用户信息
@@ -77,12 +79,14 @@ def UpdateUser():
     """
     openidlist =wechat_instance.get_followers()
     for openid in openidlist['data']['openid']:
+        info = wechat_instance.get_user_info(openid, lang='zh_CN')
         obj = User.objects.filter(openid=openid)
-        if obj:
+        print("已经判读了obj")
+        if not obj:
+            print("进入添加区")
             User.objects.create(openid=openid)
-            obj = User.objects.filter(openid=openid)
-            info = wechat_instance.get_user_info(openid=openid)
-            UserInfo.objects.create(user=obj, headimgurl=info['headimgurl'],
+            obj = User.objects.filter(openid=openid).first()
+            UserInfo.objects.create(user_id=obj.id, headimgurl=info['headimgurl'],
                                     subscribe_time=info['subscribe_time'],
                                     sex=info['sex'], language=info['language'],
                                     subscribe=info['subscribe'], province=info['province'],
@@ -90,7 +94,9 @@ def UpdateUser():
                                     groupid=info['groupid'], remark=info['remark'],
                                     city=info['city'])
         else:
-            UserInfo.objects.filter(user=obj).update(user=obj, headimgurl=info['headimgurl'],
+            print('进入修改区域')
+            obj = User.objects.filter(openid=openid).first()
+            UserInfo.objects.filter(user=obj).update(user_id=obj.id, headimgurl=info['headimgurl'],
                                     subscribe_time=info['subscribe_time'],
                                     sex=info['sex'], language=info['language'],
                                     subscribe=info['subscribe'], province=info['province'],
@@ -98,17 +104,26 @@ def UpdateUser():
                                     groupid=info['groupid'], remark=info['remark'],
                                     city=info['city'])
 
+
+
 def sendinfo(text):
     # for user in User.objects.filter():
     #     print(user.openid)
-        wechat_instance.send_text_message(user_id='o1rJcwbelqGXsK3yx6szxUHelpYE',content="test")
+        wechat_instance.send_text_message(user_id='o1rJcwU25DmE5ow_evPqKUZ7YqP0',content="test")
 
 
 if __name__ == '__main__':
     # x=wechat_instance.create_group('test')
     # print(wechat_instance.get_groups())
+    pass
+
+def test():
     x=wechat_instance.get_followers()
     print(x)
     for user in x['data']['openid']:
         user =wechat_instance.get_user_info(user,lang='zh_CN')
         print(user)
+
+def test1(openid):
+    info = wechat_instance.get_user_info(openid, lang='zh_CN')
+    print(info)

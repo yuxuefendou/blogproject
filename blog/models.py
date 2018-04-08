@@ -35,7 +35,7 @@ class Post(models.Model):
     title = models.CharField(u'标题',max_length=70)
     body = RichTextUploadingField(u'内容')
     created_time = models.DateTimeField(u'发表时间', editable = True)
-    modified_time = models.DateTimeField(u'更新时间', null=True)
+    modified_time = models.DateTimeField(u'更新时间', null=True,auto_now=True)
     # 文章摘要
     excerpt = models.CharField(u'摘要',max_length=200, blank=True)
     # 文章分类标签

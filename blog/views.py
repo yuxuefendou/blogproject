@@ -24,6 +24,9 @@ def ajax_info(request):
 
         return HttpResponse
 
+train_station=ParseStation.objects.all()
+# for tain in train_station:
+#     print(tain)
 def train(request):
     if request.method =='GET':
         time = request.GET.get('time',time1.strftime('%Y-%m-%d',time1.localtime(time1.time())))
@@ -32,7 +35,6 @@ def train(request):
         dic={'time':time,'place':place,'destination':destination}
         str = time+' '+place + ' ' + destination
         url = get_query_url(str)
-        train_station=ParseStation.objects.all()
         content = GetInfoTrain(url,True)
         return render(request, 'weixin/train.html', {'train_station':train_station,'content': content, "dic": json.dumps(dic)})
     if request.method =='POST':

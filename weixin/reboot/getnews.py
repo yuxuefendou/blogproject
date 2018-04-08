@@ -5,7 +5,7 @@ Created on 21:48 2017/11/8
 
 @author: acer
 '''
-picurl="http://wx.qlogo.cn/mmopen/PiajxSqBRaEJzN7s45KwYMJA4j5kWWfJmzvkicqnA4XD1HQR74IG4l8icCyNtROVSet3hic9ryzHUE1cDcVLBXMbibw/0"
+picurl="http://wx.qlogo.cn/mmopen/PiajxSqBRaEJzN7s45KwYMJA4j5kWWfJmzvkicqnA4XD1ibRMPpGTl6Bia8wROhEPZSeEL7AqwY0aYa1fE08NF8I7Q/132"
 def getNews(dic):
     names = locals()
     i=1

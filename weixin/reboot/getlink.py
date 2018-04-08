@@ -5,7 +5,7 @@ Created on 10:33 2017/11/9
 
 @author: acer
 '''
-picurl="http://wx.qlogo.cn/mmopen/PiajxSqBRaEJzN7s45KwYMJA4j5kWWfJmzvkicqnA4XD1HQR74IG4l8icCyNtROVSet3hic9ryzHUE1cDcVLBXMbibw/0"
+picurl="http://wx.qlogo.cn/mmopen/PiajxSqBRaEJzN7s45KwYMJA4j5kWWfJmzvkicqnA4XD1ibRMPpGTl6Bia8wROhEPZSeEL7AqwY0aYa1fE08NF8I7Q/132"
 def getLink(dic,content):
     text = dic['text']
     url=dic['url']
