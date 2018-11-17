@@ -6,7 +6,7 @@ Created on 15:30 2017/11/9
 @author: acer
 '''
 from weixin.config import wechat_instance
-from weixin.models import User,UserInfo
+from weixin.models import User,UserInfo,UserLocation
 
 """
 :param SaveUser() 初始化用户数据保存至数据库中
@@ -26,12 +26,6 @@ def SaveUserInfo():
     for obj in obj_list:
         print(obj.openid)
         info=wechat_instance.get_user_info(obj.openid,lang='zh_CN')
-        # print(info)
-        # print(info['nickname'],info['subscribe_time'],info['sex'],
-        #       info['language'],info['subscribe'],info['province'],
-        #       info['country'],info['groupid'],info['remark'],
-        #       info['city']
-        #       )
         userinfo=UserInfo(user=obj,headimgurl=info['headimgurl'],
                           subscribe_time=info['subscribe_time'],
                           sex=info['sex'],language=info['language'],
@@ -41,11 +35,6 @@ def SaveUserInfo():
                           city=info['city']
                           )
         userinfo.save()
-
-
-# def SaveUser(openid):
-#     User.objects.get_or_create(openid=openid)
-
 
 
 def UpdateUserInfo(openid):
@@ -106,24 +95,25 @@ def UpdateUser():
 
 
 
-def sendinfo(text):
-    # for user in User.objects.filter():
-    #     print(user.openid)
-        wechat_instance.send_text_message(user_id='o1rJcwU25DmE5ow_evPqKUZ7YqP0',content="test")
+def sendinfo(user,text):
+        #wechat_instance.send_text_message(user_id='o1rJcwU25DmE5ow_evPqKUZ7YqP0',content="test")
+        wechat_instance.send_text_message(user_id=user,content=text)
+
+
+def SaveUserLocation(userId,Latitude,Longitude):
+    print(userId,Latitude,Longitude)
+    UserObj = User.objects.filter(openid=userId).first()
+    UserLocation.objects.create(user_id=UserObj.id,Latitude=Latitude,Longitude=Longitude)
 
 
 if __name__ == '__main__':
-    # x=wechat_instance.create_group('test')
-    # print(wechat_instance.get_groups())
-    pass
+    def test():
+        x=wechat_instance.get_followers()
+        print(x)
+        for user in x['data']['openid']:
+            user =wechat_instance.get_user_info(user,lang='zh_CN')
+            print(user)
 
-def test():
-    x=wechat_instance.get_followers()
-    print(x)
-    for user in x['data']['openid']:
-        user =wechat_instance.get_user_info(user,lang='zh_CN')
-        print(user)
-
-def test1(openid):
-    info = wechat_instance.get_user_info(openid, lang='zh_CN')
-    print(info)
+    def test1(openid):
+        info = wechat_instance.get_user_info(openid, lang='zh_CN')
+        print(info)

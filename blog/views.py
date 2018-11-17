@@ -10,46 +10,50 @@ from django.db.models import Q
 from django.views.decorators.cache import cache_page
 import json
 import time as time1
-from weixin.get12306.get12306 import get_query_url,GetInfoTrain
+from weixin.get12306.get12306 import get_query_url, GetInfoTrain
 from weixin.models import ParseStation
 
-def test(request):
 
-    return render(request,'weixin/test.html',)
+def test(request):
+    return render(request, 'weixin/test.html', )
+
 
 def ajax_info(request):
     if request.method == "POST":
-        username = request.POST.get('username','芜湖')
+        username = request.POST.get('username', '芜湖')
         print(username)
 
         return HttpResponse
 
-train_station=ParseStation.objects.all()
-# for tain in train_station:
-#     print(tain)
+
+train_station = ParseStation.objects.all()
+
+
 def train(request):
-    if request.method =='GET':
-        time = request.GET.get('time',time1.strftime('%Y-%m-%d',time1.localtime(time1.time())))
-        place = request.GET.get('place','上海')
-        destination = request.GET.get('destination','北京')
-        dic={'time':time,'place':place,'destination':destination}
-        str = time+' '+place + ' ' + destination
+    if request.method == 'GET':
+        time = request.GET.get('time', time1.strftime('%Y-%m-%d', time1.localtime(time1.time())))
+        place = request.GET.get('place', '上海')
+        destination = request.GET.get('destination', '北京')
+        dic = {'time': time, 'place': place, 'destination': destination}
+        str = time + ' ' + place + ' ' + destination
         url = get_query_url(str)
-        content = GetInfoTrain(url,True)
-        return render(request, 'weixin/train.html', {'train_station':train_station,'content': content, "dic": json.dumps(dic)})
-    if request.method =='POST':
+        content = GetInfoTrain(url, True)
+        return render(request, 'weixin/train.html',
+                      {'train_station': train_station, 'content': content, "dic": json.dumps(dic)})
+    if request.method == 'POST':
         time = request.POST.get('time')
         place = request.POST.get('place')
         destination = request.POST.get('destination')
-        print('时间',time)
-        print('出发地',place)
-        print('目的地',destination)
-        str = time+' '+place + ' ' + destination
+        print('时间', time)
+        print('出发地', place)
+        print('目的地', destination)
+        str = time + ' ' + place + ' ' + destination
         url = get_query_url(str)
-        content = GetInfoTrain(url,True)
-        dic = {'time':time,'place':place,'destination':destination}
+        content = GetInfoTrain(url, True)
+        dic = {'time': time, 'place': place, 'destination': destination}
         return HttpResponse(json.dumps(content))
         # return render(request,'weixin/train.html',{'content':json.dumps(content),"dic":json.dumps(dic)})
+
 
 def search(request):
     q = request.GET.get('q')
@@ -58,9 +62,10 @@ def search(request):
         error_msg = "请输入关键词"
         return render(request, 'blog/index.html', {'error_msg': error_msg})
 
-    post_list = Post.objects.filter(Q(title__icontains=q) | Q(body__icontains=q))
+    post_list = Post.objects.filter(Q(title__icontains=q) | Q(body__icontains=q),flag=1)
     return render(request, 'blog/index.html', {'error_msg': error_msg,
                                                'post_list': post_list})
+
 
 def detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
@@ -78,7 +83,7 @@ def detail(request, pk):
     form = CommentForm()
     # 获取这篇 post 下的全部评论
     comment_list = post.comment_set.all()
-    URL = request.get_host()+request.path
+    URL = request.get_host() + request.path
     print(URL)
     # 将文章、表单、以及文章下的评论列表作为模板变量传给 detail.html 模板，以便渲染相应数据。
     context = {'post': post,
@@ -93,7 +98,8 @@ def detail(request, pk):
 def archives(request, year, month):
     # print(year,month)
     post_list = Post.objects.filter(created_time__year=year,
-                                    created_time__month=month).order_by('-created_time')
+                                    created_time__month=month,
+                                    flag=1).order_by('-created_time')
     # for post in post_list:
     #     print(post.title)
 
@@ -104,7 +110,8 @@ class IndexView(pagination):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
-
+    def get_queryset(self):
+        return super(IndexView,self).get_queryset().filter(flag=1)
 
 class ArchiivesView(pagination):
     model = Post
@@ -113,7 +120,8 @@ class ArchiivesView(pagination):
 
     def get_queryset(self):
         return super(ArchiivesView, self).get_queryset().filter(created_time__year=self.kwargs.get('year'),
-                                                                created_time__month=self.kwargs.get('month'))
+                                                                created_time__month=self.kwargs.get('month'),
+                                                                flag=1)
 
 
 class CategoryView(pagination):

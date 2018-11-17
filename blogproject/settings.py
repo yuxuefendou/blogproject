@@ -11,7 +11,8 @@ https://docs.djangoproject.com/en/1.11/ref/settings/
 """
 
 import os
-
+import pymysql
+pymysql.install_as_MySQLdb()
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -85,18 +86,18 @@ WSGI_APPLICATION = 'blogproject.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
     # 'default': {
-    #     'ENGINE': 'django.db.backends.mysql',  # 或者使用 mysql.connector.django
-    #     'NAME': 'blog',
-    #     'USER': 'root',
-    #     'PASSWORD': '123456',
-    #     'HOST': 'localhost',
-    #     'PORT': '3306',
-    # }
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    # },
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',  # 或者使用 mysql.connector.django
+        'NAME': 'blog',
+        'USER': 'blog',
+        'PASSWORD': '123456',
+        'HOST': '127.0.0.1',
+        'PORT': '63306',
+    }
 }
 
 # Password validation

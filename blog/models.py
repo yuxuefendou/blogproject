@@ -32,6 +32,8 @@ class Tag(models.Model):
 
 @python_2_unicode_compatible
 class Post(models.Model):
+    flag_name= ((1,'显示'),
+               (2,'隐藏'),)
     title = models.CharField(u'标题',max_length=70)
     body = RichTextUploadingField(u'内容')
     created_time = models.DateTimeField(u'发表时间', editable = True)
@@ -46,6 +48,7 @@ class Post(models.Model):
 
     author = models.ForeignKey(User)
     views = models.PositiveIntegerField(default=0)
+    flag = models.IntegerField('标记',max_length=1,choices=flag_name)
 
     def increase_views(self):
         self.views += 1

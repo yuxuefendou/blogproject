@@ -18,7 +18,7 @@ from weixin.models import Express
 APP_id = "1310991"
 APP_key = "a3a25103-80f5-4605-b9f4-57f5b8475568"
 DtatType = '2'
-url = 'http://api.kdniao.cc/Ebusiness/EbusinessOrderHandle.aspx'
+url = 'http://api.kdniao.com/Ebusiness/EbusinessOrderHandle.aspx'
 
 def encrypt(origin_data, appkey):
     """数据内容签名：把(请求内容(未编码)+AppKey)进行MD5加密，然后Base64编码"""
