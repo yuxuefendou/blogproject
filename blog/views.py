@@ -1,8 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-import markdown
 from comments.forms import CommentForm
-from django.views.generic import ListView, DetailView
-# Create your views here.
 from django.http import HttpResponse
 from .models import Post, Category, Tag
 from .pagination import pagination
@@ -11,18 +8,36 @@ from django.views.decorators.cache import cache_page
 import json
 import time as time1
 from weixin.get12306.get12306 import get_query_url, GetInfoTrain
-from weixin.models import ParseStation
+from weixin.models import ParseStation,UserInfo,UserLocation
 
 
 def test(request):
     return render(request, 'weixin/test.html', )
 
 
+def getruning(request):
+    """
+    :param request:
+    :return: 获取位置信息并返回
+    """
+    if request.method== "GET":
+        userinfos = UserInfo.objects.filter().all()
+        return render(request,"weixin/get_runing.html",{'userinfos':userinfos,})
+    if request.method =="POST":
+        userid = request.POST.get('id')
+        localtion_list=[]
+        user_localtions = UserLocation.objects.filter(user_id=userid).order_by('-createTime')[0:1000]
+        for localtion in user_localtions:
+            localtion_list.insert(0,[float(localtion.Longitude),float(localtion.Latitude)])
+        localtion_list_dic = json.dumps({'localtion_data':localtion_list,})
+        return HttpResponse(localtion_list_dic)
+
+
+
 def ajax_info(request):
     if request.method == "POST":
         username = request.POST.get('username', '芜湖')
         print(username)
-
         return HttpResponse
 
 
@@ -52,7 +67,6 @@ def train(request):
         content = GetInfoTrain(url, True)
         dic = {'time': time, 'place': place, 'destination': destination}
         return HttpResponse(json.dumps(content))
-        # return render(request,'weixin/train.html',{'content':json.dumps(content),"dic":json.dumps(dic)})
 
 
 def search(request):
@@ -69,15 +83,6 @@ def search(request):
 
 def detail(request, pk):
     post = get_object_or_404(Post, pk=pk)
-
-    # return render(request, 'blog/detail.html', context={'post': post})
-    # post.increase_views()
-    # post.body = markdown.markdown(post.body,
-    #                               extensions=[
-    #                                   'markdown.extensions.extra',
-    #                                   'markdown.extensions.codehilite',
-    #                                   'markdown.extensions.toc',
-    #                               ])
     post.increase_views()
     # 记得在顶部导入 CommentForm
     form = CommentForm()

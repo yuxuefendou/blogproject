@@ -77,4 +77,4 @@ def response_text(data,flag):
     str = "您语音输入的为:%s\n\n" % data
     if flag:
         reply_text=str + reply_text
-    return wechat_instance.response_text(content=reply_text)
+    return reply_text,wechat_instance.response_text(content=reply_text)

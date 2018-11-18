@@ -1,7 +1,6 @@
 from django.db import models
 import markdown
 from django.utils.html import strip_tags
-from ckeditor.fields import RichTextField
 from ckeditor_uploader.fields import RichTextUploadingField
 # Create your models here.
 
@@ -48,7 +47,7 @@ class Post(models.Model):
 
     author = models.ForeignKey(User)
     views = models.PositiveIntegerField(default=0)
-    flag = models.IntegerField('标记',max_length=1,choices=flag_name)
+    flag = models.IntegerField('标记',choices=flag_name)
 
     def increase_views(self):
         self.views += 1

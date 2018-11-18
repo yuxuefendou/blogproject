@@ -1,249 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1172b57b-ebbf-45b2-ba0b-3df44333a307" name="Default" comment="train input使用HTML5 &lt;datalist&gt; 进行提示">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/to_slave.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weixin/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/blogproject.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/blogproject.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/f1ea216d-0301-48df-bab2-ce5523606281/storage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/f1ea216d-0301-48df-bab2-ce5523606281/storage.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="1172b57b-ebbf-45b2-ba0b-3df44333a307" name="Default" comment="保存地位位置信息">
+      <change afterPath="$PROJECT_DIR$/templates/weixin/get_runing.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/feeds.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/feeds.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/pagination.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/pagination.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templatetags/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templatetags/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/templatetags/blog_tags.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/templatetags/blog_tags.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blogproject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogproject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blogproject/wsgi.py" beforeDir="false" afterPath="$PROJECT_DIR$/blogproject/wsgi.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/apps.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/apps.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/forms.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/tests.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/comments/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/comments/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manage.py" beforeDir="false" afterPath="$PROJECT_DIR$/manage.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/admin/fonts/LICENSE.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ajax-input.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ajax-input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ajax-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ajax-input.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/CHANGES.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/CHANGES.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/build-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/build-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/contents.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/contents.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/af.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/af.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ar.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/az.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/az.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/bg.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/bg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/bn.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/bn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/bs.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/bs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/cs.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/cs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/cy.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/cy.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/da.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/da.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/de-ch.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/de-ch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/de.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/de.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/el.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/el.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/en-au.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/en-au.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/en-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/en-ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/en-gb.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/en-gb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/en.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/en.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/eo.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/eo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/es.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/es.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/et.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/et.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/eu.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/eu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/fa.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/fa.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/fi.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/fi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/fo.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/fo.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/fr-ca.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/fr-ca.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/fr.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/fr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/gl.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/gl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/gu.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/gu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/he.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/he.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/hi.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/hi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/hr.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/hr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/hu.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/hu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/id.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/id.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/is.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/is.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/it.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/it.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ja.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ja.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ka.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ka.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/km.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/km.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ko.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ko.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ku.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ku.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/lt.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/lt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/lv.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/lv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/mk.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/mk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/mn.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/mn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ms.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ms.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/nb.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/nb.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/nl.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/nl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/no.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/no.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/oc.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/oc.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/pl.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/pl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/pt-br.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/pt-br.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/pt.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/pt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ro.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ro.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ru.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ru.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/si.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/si.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/sk.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/sk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/sl.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/sl.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/sq.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/sq.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/sr-latn.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/sr-latn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/sr.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/sr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/sv.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/sv.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/th.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/th.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/tr.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/tr.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/tt.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/tt.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ug.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/ug.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/uk.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/uk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/vi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/zh-cn.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/zh-cn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/zh.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/lang/zh.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/CHANGES.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/CHANGES.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/README.ru.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/README.ru.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/highlight.pack.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/arta.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/arta.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/ascetic.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/ascetic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-dune.dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-dune.dark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-dune.light.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-dune.light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-forest.dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-forest.dark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-forest.light.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-forest.light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-heath.dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-heath.dark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-heath.light.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-heath.light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.dark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.light.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-lakeside.light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.dark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.light.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/atelier-seaside.light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/brown_paper.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/brown_paper.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/dark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/docco.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/docco.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/far.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/far.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/foundation.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/foundation.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/github.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/github.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/googlecode.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/googlecode.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/idea.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/idea.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/ir_black.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/ir_black.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/magula.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/magula.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/mono-blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/mono-blue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/monokai_sublime.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/obsidian.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/obsidian.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.dark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.light.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/paraiso.light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/pojoaque.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/pojoaque.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/railscasts.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/railscasts.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/rainbow.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/rainbow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/school_book.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/school_book.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_dark.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_light.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/solarized_light.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/sunburst.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/sunburst.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-blue.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-blue.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-bright.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-bright.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-eighties.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night-eighties.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow-night.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/tomorrow.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/vs.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/vs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/xcode.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/xcode.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/zenburn.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/codesnippet/lib/highlight/styles/zenburn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/colordialog/dialogs/colordialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/colordialog/dialogs/colordialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/copyformatting/styles/copyformatting.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/devtools/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/devtools/lang/_translationstatus.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/preview/preview.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/preview/preview.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/scayt/CHANGELOG.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/scayt/CHANGELOG.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/scayt/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/scayt/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/scayt/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/scayt/dialogs/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/scayt/dialogs/toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/tableselection/styles/tableselection.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/templates/dialogs/templates.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/templates/dialogs/templates.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/_translationstatus.txt" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/lang/_translationstatus.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/yui/assets/yui.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/uicolor/yui/assets/yui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/LICENSE.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/dialogs/ciframe.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/dialogs/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/dialog_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/dialog_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/dialog_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/editor_gecko.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/editor_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/editor_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/editor_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/dialog.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/dialog_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/dialog_ie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/dialog_ie7.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/dialog_ie7.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/dialog_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/dialog_ie8.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/dialog_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/dialog_iequirks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/editor.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/editor_gecko.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/editor_gecko.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/editor_ie.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/editor_ie.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/editor_ie7.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/editor_ie7.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/editor_ie8.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/editor_ie8.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/editor_iequirks.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/editor_iequirks.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/skins/moono/readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/ckeditor/styles.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/ckeditor/styles.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/basic.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/basic.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/black.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/black.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/galleriffic-1.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/galleriffic-1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/galleriffic-2.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/galleriffic-2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/galleriffic-3.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/galleriffic-3.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/galleriffic-4.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/galleriffic-4.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/galleriffic-5.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/galleriffic-5.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/white.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/galleriffic/css/white.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/galleriffic/js/jquery.galleriffic.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/galleriffic/js/jquery.galleriffic.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/ckeditor/galleriffic/js/jquery.opacityrollover.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/ckeditor/galleriffic/js/jquery.opacityrollover.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/blog/detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/blog/detail.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/weixin/new_train.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/weixin/new_train.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/weixin/test1.bak" beforeDir="false" afterPath="$PROJECT_DIR$/templates/weixin/test1.bak" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/weixin/test2.bakl" beforeDir="false" afterPath="$PROJECT_DIR$/templates/weixin/test2.bakl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/weixin/train.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/weixin/train.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/blog/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/blog/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/blog/getblog.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/blog/getblog.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/weixin/test1.bak" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/weixin/test2.bakl" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/weixin/blog/response_text.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/blog/response_text.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/event/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/event/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/event/click.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/event/click.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/express/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/express/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/express/getinfo.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/express/getinfo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/express/resolvexsl.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/express/resolvexsl.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/get12306/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/get12306/__init__.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weixin/get12306/get12306.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/get12306/get12306.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weixin/get12306/parse_station.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/get12306/parse_station.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/get12306/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/get12306/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/media/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/media/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/media/media.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/media/media.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/menu/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/menu/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/menu/setmenu.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/menu/setmenu.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/reboot/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/reboot/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/reboot/getlink.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/reboot/getlink.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/reboot/getnews.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/reboot/getnews.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/reboot/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/reboot/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/reboot/tuliing.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/reboot/tuliing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/user/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/user/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weixin/get12306/test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weixin/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weixin/user/usermange.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/user/usermange.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weixin/voice/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/weixin/voice/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -292,13 +64,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="blog: schema" type="c314c289:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="Django default" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="blog: schema" type="c314c289:MysqlImplModel$Schema" />
-        <item name="weixin_keyword: table" type="98d5ac3d:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -322,73 +87,76 @@
       <usages-collector id="statistics.js.language.service.starts" />
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="1" />
-          <entry key="PLAIN_TEXT" value="12" />
-          <entry key="Python" value="1005" />
+          <entry key="HTML" value="736" />
+          <entry key="PLAIN_TEXT" value="38" />
+          <entry key="Python" value="2445" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Database Element" value="2" />
-          <entry key="HTML" value="3" />
-          <entry key="Python" value="40" />
+          <entry key="Database Element" value="8" />
+          <entry key="HTML" value="11" />
+          <entry key="Python" value="80" />
           <entry key="PythonStub" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="html" value="3" />
-          <entry key="py" value="40" />
+          <entry key="html" value="11" />
+          <entry key="py" value="80" />
           <entry key="pyi" value="1" />
           <entry key="weixin_express" value="1" />
           <entry key="weixin_keyword" value="1" />
+          <entry key="weixin_parsestation" value="1" />
+          <entry key="weixin_user" value="1" />
+          <entry key="weixin_userinfo" value="3" />
+          <entry key="weixin_userlocation" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="Django Console" value="19" />
-          <entry key="html" value="1" />
-          <entry key="py" value="986" />
-          <entry key="txt" value="12" />
+          <entry key="html" value="736" />
+          <entry key="py" value="2426" />
+          <entry key="txt" value="38" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/weixin/get_runing.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2221">
+              <caret line="164" column="23" lean-forward="true" selection-start-line="164" selection-start-column="23" selection-end-line="164" selection-end-column="23" />
+              <folding>
+                <element signature="n#style#0;n#label#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#select#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blogproject/settings.py">
+        <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="98" selection-start-line="98" selection-end-line="98" />
+            <state relative-caret-position="-1470">
+              <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
               <folding>
-                <element signature="e#315#324#0" expanded="true" />
+                <element signature="e#0#54#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weixin/views.py">
+        <entry file="file://$PROJECT_DIR$/templates/weixin/train.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1755">
-              <caret line="133" column="39" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/weixin/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="636">
+              <caret line="166" column="51" lean-forward="true" selection-start-line="166" selection-start-column="51" selection-end-line="166" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -396,8 +164,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/weixin/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="298">
-              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+            <state relative-caret-position="792">
+              <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -408,8 +179,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -431,6 +202,7 @@
       <find>kw</find>
       <find>use_t</find>
       <find>pagination_data</find>
+      <find>data</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -453,8 +225,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/weixin/express/resolvexsl.py" />
-        <option value="$PROJECT_DIR$/weixin/voice/__init__.py" />
         <option value="$PROJECT_DIR$/weixin/voice/response_voice.py" />
         <option value="$PROJECT_DIR$/weixin/reboot/tuliing.py" />
         <option value="$PROJECT_DIR$/weixin/menu/__init__.py" />
@@ -471,15 +241,12 @@
         <option value="$PROJECT_DIR$/weixin/tests.py" />
         <option value="$PROJECT_DIR$/weixin/get12306/stations.py" />
         <option value="$PROJECT_DIR$/weixin/get12306/test.py" />
-        <option value="$PROJECT_DIR$/weixin/blog/response_text.py" />
         <option value="dbtable:/3078ba69/c05f0a52-2e77-4c5d-8348-b77d96bb00b0/main.weixin_parsestation" />
-        <option value="$PROJECT_DIR$/weixin/get12306/parse_station.py" />
         <option value="$PROJECT_DIR$/static/ajax-input.css" />
         <option value="$PROJECT_DIR$/static/ajax-input.js" />
         <option value="$PROJECT_DIR$/templates/weixin/test.html" />
         <option value="$PROJECT_DIR$/templates/blog/detail.html" />
         <option value="$PROJECT_DIR$/templates/weixin/train.html" />
-        <option value="$PROJECT_DIR$/blog/urls.py" />
         <option value="dbtable:/3078ba69/c05f0a52-2e77-4c5d-8348-b77d96bb00b0/main.weixin_userinfo" />
         <option value="dbtable:/3078ba69/c05f0a52-2e77-4c5d-8348-b77d96bb00b0/main.weixin_user" />
         <option value="$PROJECT_DIR$/weixin/reboot/getnews.py" />
@@ -492,18 +259,23 @@
         <option value="dbtable:/3078ba69/c05f0a52-2e77-4c5d-8348-b77d96bb00b0/main.auth_user" />
         <option value="$PROJECT_DIR$/comments/models.py" />
         <option value="$PROJECT_DIR$/comments/views.py" />
-        <option value="$PROJECT_DIR$/weixin/get12306/get12306.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
-        <option value="$PROJECT_DIR$/blog/views.py" />
-        <option value="$PROJECT_DIR$/blog/models.py" />
         <option value="$PROJECT_DIR$/weixin/express/getinfo.py" />
-        <option value="$PROJECT_DIR$/weixin/views.py" />
-        <option value="$PROJECT_DIR$/weixin/user/usermange.py" />
         <option value="/Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/wechat_sdk/reply.py" />
         <option value="$PROJECT_DIR$/blog/admin.py" />
-        <option value="$PROJECT_DIR$/weixin/admin.py" />
-        <option value="$PROJECT_DIR$/weixin/models.py" />
         <option value="$PROJECT_DIR$/blogproject/settings.py" />
+        <option value="$PROJECT_DIR$/weixin/get12306/get12306.py" />
+        <option value="$PROJECT_DIR$/blog/models.py" />
+        <option value="$PROJECT_DIR$/weixin/blog/response_text.py" />
+        <option value="$PROJECT_DIR$/weixin/admin.py" />
+        <option value="$PROJECT_DIR$/weixin/user/usermange.py" />
+        <option value="$PROJECT_DIR$/weixin/get12306/parse_station.py" />
+        <option value="$PROJECT_DIR$/weixin/views.py" />
+        <option value="$PROJECT_DIR$/weixin/urls.py" />
+        <option value="$PROJECT_DIR$/blog/urls.py" />
+        <option value="$PROJECT_DIR$/weixin/models.py" />
+        <option value="$PROJECT_DIR$/templates/weixin/get_runing.html" />
+        <option value="$PROJECT_DIR$/blog/views.py" />
       </list>
     </option>
   </component>
@@ -542,19 +314,35 @@
             <path>
               <item name="blogproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="blogproject" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogproject" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="ckeditor" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogproject" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogproject" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogproject" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="weixin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blogproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="blogproject" type="462c0819:PsiDirectoryNode" />
               <item name="weixin" type="462c0819:PsiDirectoryNode" />
-              <item name="express" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blogproject" type="b2602c69:ProjectViewProjectNode" />
               <item name="blogproject" type="462c0819:PsiDirectoryNode" />
               <item name="weixin" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="get12306" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -567,7 +355,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="Sqlite (Xerial)" />
-    <property name="database.console.LAST_STATE" value="true" />
+    <property name="database.console.LAST_STATE" value="false" />
     <property name="database.data.extractors.current" value="Comma-separated (CSV)" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -904,7 +692,14 @@
       <option name="project" value="LOCAL" />
       <updated>1523183070742</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="保存地位位置信息">
+      <created>1542465558079</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1542465558080</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -926,32 +721,31 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27705976" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1987076" />
       <window_info id="Structure" order="1" weight="0.24959612" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="0" weight="0.328594" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.46688208" weight="0.32328767" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.8085622" visible="true" weight="0.360274" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.44383562" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="SVN Repositories" order="7" weight="0.29502574" />
-      <window_info anchor="bottom" id="TODO" order="8" weight="0.3410959" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5048465" side_tool="true" visible="true" weight="0.32739726" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.48626816" weight="0.3260274" />
-      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.6752827" weight="0.4410959" />
-      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.47881997" weight="0.32739726" />
-      <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.4951535" weight="0.32739726" />
+      <window_info anchor="bottom" id="TODO" order="8" sideWeight="0.4983845" weight="0.3410959" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.1914378" side_tool="true" visible="true" weight="0.360274" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.48142165" weight="0.3260274" />
+      <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.66397417" weight="0.35479453" />
+      <window_info anchor="bottom" id="Version Control" order="12" sideWeight="0.4765751" weight="0.47671232" />
+      <window_info anchor="bottom" id="Database Console" order="13" sideWeight="0.49434572" weight="0.37637794" />
       <window_info anchor="bottom" id="Concurrent Activities Diagram" order="14" visible="true" weight="0.32933104" />
       <window_info anchor="bottom" id="Docker" order="15" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="16" sideWeight="0.49919224" weight="0.32913387" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.22294022" />
+      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.17770597" />
       <window_info anchor="right" id="Data View" order="4" weight="0.3290469" />
       <window_info anchor="right" id="SciView" order="5" />
     </layout>
@@ -1007,7 +801,8 @@
     <MESSAGE value="分页、订阅" />
     <MESSAGE value="后台图片上传" />
     <MESSAGE value="train input使用HTML5 &lt;datalist&gt; 进行提示" />
-    <option name="LAST_COMMIT_MESSAGE" value="train input使用HTML5 &lt;datalist&gt; 进行提示" />
+    <MESSAGE value="保存地位位置信息" />
+    <option name="LAST_COMMIT_MESSAGE" value="保存地位位置信息" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1021,45 +816,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="dbDummy://dbtable:/3078ba69/c05f0a52-2e77-4c5d-8348-b77d96bb00b0/main.blog_tag" />
-    <entry file="dbDummy://dbtable:/3078ba69/c05f0a52-2e77-4c5d-8348-b77d96bb00b0/main.auth_group" />
-    <entry file="dbDummy://dbtable:/3078ba69/c05f0a52-2e77-4c5d-8348-b77d96bb00b0/main.auth_group_permissions" />
-    <entry file="dbDummy://dbtable:/3078ba69/c05f0a52-2e77-4c5d-8348-b77d96bb00b0/main.auth_permission" />
-    <entry file="dbDummy://dbtable:/3078ba69/c05f0a52-2e77-4c5d-8348-b77d96bb00b0/main.auth_user" />
-    <entry file="dbDummy://dbtable:/3078ba69/c05f0a52-2e77-4c5d-8348-b77d96bb00b0/main.django_admin_log" />
-    <entry file="dbDummy://dbtable:/3078ba69/3fa91c1a-58d1-45f7-8262-40e5004b0b3e/main.django_admin_log" />
-    <entry file="dbDummy://dbtable:/3078ba69/fd2c9c3d-364e-43c2-95e4-bc18923a7a34/main.weixin_user" />
-    <entry file="dbDummy://dbtable:/3078ba69/fd2c9c3d-364e-43c2-95e4-bc18923a7a34/main.blog_post" />
-    <entry file="dbDummy://dbtable:/3078ba69/fd2c9c3d-364e-43c2-95e4-bc18923a7a34/main.weixin_userinfo" />
-    <entry file="dbDummy://dbtable:/3078ba69/fd2c9c3d-364e-43c2-95e4-bc18923a7a34/main.blog_post_tags" />
-    <entry file="file://$PROJECT_DIR$/blogproject/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="dbDummy://dbtable:/3078ba69/fd2c9c3d-364e-43c2-95e4-bc18923a7a34/main.comments_comment" />
-    <entry file="file://$PROJECT_DIR$/comments/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
-          <caret line="34" column="47" selection-start-line="34" selection-start-column="47" selection-end-line="34" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/to_slave.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/Programs/Python/Python35-32/Lib/site-packages/django/core/handlers/exception.py" />
-    <entry file="file://D:/Programs/Python/Python35-32/Lib/site-packages/django/utils/deprecation.py" />
-    <entry file="file://D:/Programs/Python/Python35-32/Lib/site-packages/django/core/handlers/base.py" />
-    <entry file="file://$PROJECT_DIR$/weixin/get12306/get12306.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="75" column="42" selection-start-line="75" selection-start-column="42" selection-end-line="75" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/comments/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="558">
@@ -1116,31 +872,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-589">
-          <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weixin/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/weixin/express/getinfo.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1231">
           <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/blog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="25" column="45" lean-forward="true" selection-start-line="25" selection-start-column="45" selection-end-line="25" selection-end-column="45" />
         </state>
       </provider>
     </entry>
@@ -1158,38 +893,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="38" column="39" selection-start-line="38" selection-start-column="26" selection-end-line="38" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/wechat_sdk/messages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="116" column="25" lean-forward="true" selection-start-line="116" selection-start-column="25" selection-end-line="116" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1199943128/builtins.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="4715" column="11" lean-forward="true" selection-start-line="4715" selection-start-column="11" selection-end-line="4715" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/time.pyi">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-461">
           <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/weixin/user/usermange.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="103" column="35" selection-start-line="103" selection-start-column="35" selection-end-line="103" selection-end-column="35" />
         </state>
       </provider>
     </entry>
@@ -1256,39 +963,240 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weixin/views.py">
+    <entry file="das://e75e85ef-98c9-4aa3-8f25-b5db7fc6fee0/schema/blog/table/weixin_user">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e75e85ef-98c9-4aa3-8f25-b5db7fc6fee0/schema/blog/table/weixin_userlocation">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/fields/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1755">
-          <caret line="133" column="39" selection-start-line="133" selection-start-column="39" selection-end-line="133" selection-end-column="39" />
+        <state relative-caret-position="15">
+          <caret line="1483" column="16" lean-forward="true" selection-start-line="1483" selection-start-column="16" selection-end-line="1483" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/pymysql/err.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="106" selection-start-line="106" selection-end-line="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/migrations/0003_post_flag.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="5" lean-forward="true" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin/get12306/test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="18" column="16" lean-forward="true" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin/get12306/stations.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin/get12306/get12306.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="97">
+          <caret line="163" selection-start-line="163" selection-end-line="163" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="74" column="47" lean-forward="true" selection-start-line="74" selection-start-column="47" selection-end-line="74" selection-end-column="47" />
           <folding>
-            <element signature="e#0#39#0" expanded="true" />
+            <element signature="e#0#28#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blogproject/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="88" column="18" lean-forward="true" selection-start-line="88" selection-start-column="18" selection-end-line="88" selection-end-column="18" />
+          <folding>
+            <element signature="e#315#324#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/weixin/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/weixin/models.py">
+    <entry file="file://$PROJECT_DIR$/weixin/blog/response_text.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+        <state relative-caret-position="815">
+          <caret line="79" column="22" selection-start-line="79" selection-start-column="22" selection-end-line="79" selection-end-column="22" />
+          <folding>
+            <element signature="e#95#130#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blogproject/settings.py">
+    <entry file="file://$PROJECT_DIR$/weixin/get12306/parse_station.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="98" selection-start-line="98" selection-end-line="98" />
+        <state relative-caret-position="30">
+          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
           <folding>
-            <element signature="e#315#324#0" expanded="true" />
+            <element signature="e#95#133#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e75e85ef-98c9-4aa3-8f25-b5db7fc6fee0/schema/blog/table/weixin_parsestation">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://e75e85ef-98c9-4aa3-8f25-b5db7fc6fee0/schema/blog/table/weixin_userinfo">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin/user/usermange.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1485">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+          <folding>
+            <element signature="e#95#136#0" expanded="true" />
+            <marker date="1542517012942" expanded="true" signature="3469:3828" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/wechat_sdk/messages.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="47" column="25" lean-forward="true" selection-start-line="47" selection-start-column="25" selection-end-line="47" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
+          <folding>
+            <element signature="e#645#677#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/weixin/new_train.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-642">
+          <caret line="99" column="36" lean-forward="true" selection-start-line="99" selection-start-column="36" selection-end-line="99" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="31" column="20" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/weixin/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="87" lean-forward="true" selection-start-line="8" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///Library/Frameworks/Python.framework/Versions/3.5/lib/python3.5/site-packages/django/db/models/query.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="956" column="37" lean-forward="true" selection-start-line="956" selection-start-column="37" selection-end-line="956" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/weixin/train.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="636">
+          <caret line="166" column="51" lean-forward="true" selection-start-line="166" selection-start-column="51" selection-end-line="166" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/weixin/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="105" column="24" selection-start-line="105" selection-start-column="24" selection-end-line="105" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/weixin/get_runing.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2221">
+          <caret line="164" column="23" lean-forward="true" selection-start-line="164" selection-start-column="23" selection-end-line="164" selection-end-column="23" />
+          <folding>
+            <element signature="n#style#0;n#label#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#select#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Library/Caches/PyCharm2018.2/python_stubs/-1199943128/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="3599" lean-forward="true" selection-start-line="3599" selection-end-line="3599" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1470">
+          <caret line="29" column="41" lean-forward="true" selection-start-line="29" selection-start-column="41" selection-end-line="29" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#54#0" expanded="true" />
           </folding>
         </state>
       </provider>

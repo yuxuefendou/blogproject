@@ -29,4 +29,5 @@ urlpatterns = [
     url(r'^train',views.train,name='train'),
     url(r'^test',views.test,name='test'),
     url(r'^ajax_info',views.ajax_info,name='ajax_info'),
+    url(r'^getruning', views.getruning, name='getruning'),
 ]

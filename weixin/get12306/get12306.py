@@ -166,10 +166,6 @@ def GetInfoTrain(url, flag=False):
 
             # 循环遍历每辆列车的信息
             data_list = raw_train.split('|')
-            # print(code_dict[data_list[6]])
-            # print(data_list)
-            # print("-"*50)
-            # 车次号码
             train_no = data_list[3]
             # 出发站
             from_station_code = data_list[6]
