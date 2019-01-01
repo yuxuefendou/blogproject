@@ -23,19 +23,19 @@ def UpdateUserInfo(openid):
         obj.update(subscribe=1)
     else:
         info = wechat_instance.get_user_info(openid,lang='zh_CN')
+        print(info)
         subscribe_time = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(info['subscribe_time']))
-        UserInfo.objects.create(user=obj,headimgurl=info['headimgurl'],
+        UserInfo.objects.create(openid=openid, headimgurl=info['headimgurl'],
                                 subscribe_time=subscribe_time,
-                                sex=info['sex'],language=info['language'],
-                                subscribe=info['subscribe'],province=info['province'],
-                                nickname=info['nickname'],country=info['country'],
-                                groupid=info['groupid'],remark=info['remark'],
+                                sex=info['sex'], language=info['language'],
+                                subscribe=info['subscribe'], province=info['province'],
+                                nickname=info['nickname'], country=info['country'],
+                                groupid=info['groupid'], remark=info['remark'],
                                 city=info['city'])
+
 
 def DelUser(openid):
     UserInfo.objects.filter(openid=openid).update(subscribe=2)
-
-
 
 
 def UpdateUser():

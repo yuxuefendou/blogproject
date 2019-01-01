@@ -9,12 +9,14 @@ import json
 import time as time1
 from weixin.get12306.get12306 import get_query_url, GetInfoTrain
 from weixin.models import ParseStation,UserInfo,UserLocation
+from django.contrib.auth.decorators import login_required
+
 
 
 def test(request):
     return render(request, 'weixin/test.html', )
 
-
+@login_required()
 def getruning(request):
     """
     :param request:
@@ -59,13 +61,13 @@ def train(request):
         time = request.POST.get('time')
         place = request.POST.get('place')
         destination = request.POST.get('destination')
-        print('时间', time)
-        print('出发地', place)
-        print('目的地', destination)
+        # print('时间:'+time)
+        # print('出发地:'+place)
+        # print('目的地:'+destination)
         str = time + ' ' + place + ' ' + destination
         url = get_query_url(str)
         content = GetInfoTrain(url, True)
-        dic = {'time': time, 'place': place, 'destination': destination}
+        # dic = {'time': time, 'place': place, 'destination': destination}
         return HttpResponse(json.dumps(content))
 
 

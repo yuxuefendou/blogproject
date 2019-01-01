@@ -104,3 +104,52 @@ class DialogueInformation(models.Model):
 
     def __str__(self):
         return self.user
+
+
+class user(models.Model):
+    """
+    用户
+    """
+    user_name = models.CharField('用户名',max_length=128)
+    create_time = models.DateTimeField('创建时间',auto_now=True)
+    def __str__(self):
+        return self.user_name
+
+class user_capital(models.Model):
+    """
+    用户资金流转信息
+    """
+    money_types=(
+        (1,'未还'),
+        (2,'已还')
+    )
+    user = models.ForeignKey(user)
+    creae_time = models.DateTimeField('借钱时间')
+    money = models.FloatField('金钱额度',max_length=128)
+    mag = models.TextField('备注')
+    moneyType =models.IntegerField('借还情况',choices=money_types,default=1)
+    update_time = models.DateTimeField('更新时间',auto_now_add=True)
+
+
+
+class chargeDischargeStatement(models.Model):
+    """
+    收支记录表
+    """
+    flags = (
+        (1,'支出'),
+        (2,'收入')
+    )
+    types = (
+        (1,'购物'),
+        (2,'其他')
+    )
+    createTime = models.DateTimeField('时间')
+    money = models.FloatField('金额',max_length=128)
+    flag = models.IntegerField('收支类型',choices=flags,default=1)
+    consumptionTypes= models.IntegerField('消费类型',choices=types,default=1)
+    msg = models.TextField('备注')
+    updateTime = models.DateTimeField('更新时间',auto_now_add=True)
+
+
+
